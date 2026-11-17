@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Início | Planeta Consciente{% endblock %}
+{% block content %}
+<section class="hero">
+  <span class="etiqueta">Cuidar do planeta começa com a gente</span>
+  <h1>Um futuro melhor começa com <span>pequenas atitudes.</span></h1>
+  <p>Descubra como escolhas do dia a dia podem ajudar a proteger o meio ambiente e enfrentar as mudanças climáticas.</p>
+  <a class="botao" href="{{ url_for('dicas') }}">Quero aprender</a>
+</section>
+<section class="secao">
+  <h2>Conheça o projeto</h2>
+  <p>O Planeta Consciente é um site educativo que compartilha informações, dicas e desafios sustentáveis. Nosso objetivo é transformar conhecimento em atitudes positivas.</p>
+  <div class="cartoes">
+    <article class="cartao"><div class="icone">💧</div><h3>Economize água</h3><p>Evite desperdícios e use a água com responsabilidade.</p></article>
+    <article class="cartao"><div class="icone">⚡</div><h3>Use energia com consciência</h3><p>Apague as luzes e desligue aparelhos que não estão em uso.</p></article>
+    <article class="cartao"><div class="icone">♻️</div><h3>Reduza resíduos</h3><p>Reutilize materiais e separe corretamente os recicláveis.</p></article>
+  </div>
+</section>
+{% endblock %}

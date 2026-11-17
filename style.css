@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+:root { --verde:#176b4b; --escuro:#104b37; --texto:#24352d; --fundo:#f8fbf8; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Nunito',Arial,sans-serif; color:var(--texto); background:var(--fundo); line-height:1.6; }
+.topo { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:18px 6%; background:white; box-shadow:0 2px 14px #153c2510; }
+.marca { color:var(--escuro); font-size:1.2rem; font-weight:800; text-decoration:none; }
+nav { display:flex; flex-wrap:wrap; gap:20px; }
+nav a { color:var(--texto); text-decoration:none; font-weight:700; }
+nav a:hover,.fonte a:hover { color:var(--verde); text-decoration:underline; }
+main { min-height:70vh; }
+.hero { padding:90px 8%; text-align:center; background:linear-gradient(135deg,#e5f4e9,#f7fbef); }
+.hero h1 { max-width:850px; margin:16px auto; font-size:clamp(2.3rem,5vw,4.2rem); line-height:1.12; color:var(--escuro); }
+.hero h1 span { color:#3b9566; }
+.hero p { max-width:650px; margin:0 auto 28px; font-size:1.1rem; }
+.etiqueta { color:var(--verde); font-weight:800; text-transform:uppercase; letter-spacing:.08em; font-size:.78rem; }
+.botao { display:inline-block; padding:12px 24px; border-radius:30px; color:white; background:var(--verde); text-decoration:none; font-weight:800; }
+.botao:hover { background:var(--escuro); }
+.secao,.pagina { max-width:1080px; margin:auto; padding:58px 24px; }
+.secao h2,.pagina h1 { color:var(--escuro); }
+.secao>p,.pagina>p { max-width:780px; }
+.cartoes,.lista-dicas { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; margin-top:28px; }
+.cartao { background:white; padding:24px; border-radius:18px; box-shadow:0 5px 22px #153c250d; }
+.cartao h2,.cartao h3 { color:var(--escuro); margin-top:0; }
+.icone { font-size:2rem; }
+.cartao ul { padding-left:22px; }
+.checklist { display:grid; gap:18px; max-width:760px; margin-top:25px; }
+.checklist label { display:flex; align-items:flex-start; gap:12px; }
+.checklist input { accent-color:var(--verde); width:18px; height:18px; margin-top:5px; }
+.observacao,.fonte { font-size:.92rem; color:#53665b; }
+footer { padding:28px 20px; text-align:center; background:var(--escuro); color:white; }
+footer p { margin:0 0 5px; font-weight:800; }
+@media(max-width:650px) { .topo { flex-direction:column; } nav { justify-content:center; gap:12px; } .hero { padding:65px 7%; } }
